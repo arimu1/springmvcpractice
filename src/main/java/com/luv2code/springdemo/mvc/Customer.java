@@ -1,5 +1,7 @@
 package com.luv2code.springdemo.mvc;
 
+import com.luv2code.springdemo.mvc.validation.CourseCode;
+
 import javax.validation.constraints.*;
 
 public class Customer {
@@ -22,6 +24,16 @@ public class Customer {
     @Min(value = 0, message = "must be less than or equal to 10")
     private Integer freePasses;
 
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
+    @CourseCode
+    private String courseCode;
     public String getPostalCode() {
         return postalCode;
     }

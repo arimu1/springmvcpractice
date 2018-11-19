@@ -14,14 +14,6 @@ public class Student {
         return operatingSystemOptions;
     }
 
-    public String[] getOperatingSystem() {
-        return operatingSystem;
-    }
-
-    public void setOperatingSystem(String[] operatingSystem) {
-        this.operatingSystem = operatingSystem;
-    }
-
     private LinkedHashMap<String, String> countryOptions;
     private LinkedHashMap<String, String> favoriteLanguageOptions;
     private LinkedHashMap<String, String> operatingSystemOptions;
@@ -85,5 +77,13 @@ public class Student {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String[] getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public void setOperatingSystem(String[] operatingSystem) {
+        this.operatingSystem = operatingSystem;
     }
 }
